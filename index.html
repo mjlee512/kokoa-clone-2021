@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="CSS/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status-bar__column">
-            <!-- column만 써도 되지만, css를 읽을 때 어떤 column을 가리키는지
-            알기 어려울 수 있으니, status-bar__column과 같이 어디에 쓰이는
-            column인지 써주면 좋다. -->
             <span>No Service</span>
-            <!--To Do: Wifi Icon-->
+            <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>11%</span>
-            <!-- Battery Icon -->
-            <!-- Lightning Icon -->
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
         </div>
     </div>
+
+    <header class="Welcome-header">
+        <h1 class="Welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="Welcom-heacer__text">
+            If you have a kokoa Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="tex" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <script
+    src="https://kit.fontawesome.com/4f72e12f34.js" crossorigin="anonymous">
+    </script>
 </body>
 </html>
