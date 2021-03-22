@@ -1,0 +1,61 @@
+.welcome-header {
+  margin: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  /* align-items로 header__title과 __text가 중앙에 위치할 줄 알았는데
+  header__text의 text가 중앙에 위치하지 않은 이유 알아볼 것
+  (text-align을 쓰지 않고도 align-items로만 정렬이 가능할 것으로 예상했음) */
+}
+
+.welcome-header__title {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/* [] 이 사이에 쓰인 것들은 특성 선택자(attribute selector) */
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  border-radius: 5px;
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+#login-form a {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.8);
+}
